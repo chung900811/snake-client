@@ -9,10 +9,9 @@ const connect = function () {
     
   conn.setEncoding("utf8");
   
-  conn.on('connect', (connect) => {
+  conn.on('connect', () => {
   console.log(`Successfully connected to game server`);
   conn.write(`Name: TH`);
-  conn.write("Move: up");
   });
   
   conn.on('data', (data) => {
@@ -22,5 +21,4 @@ const connect = function () {
   return conn;
 };
 
-connect()
 module.exports = { connect }
