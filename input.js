@@ -1,16 +1,15 @@
-let connection;
-
-const setupInput = (conn) =>{
+const setupInput = function (conn) {
   connection = conn;
   const stdin = process.stdin;
   stdin.setRawMode(true);
-  stdin.setEncoding('utf8');
-  stdin.on('data', key => handleUserInput(key));
+  stdin.setEncoding("utf8");
   stdin.resume();
+  stdin.on('data', handleUserInput);
   return stdin;
 };
 
-const handleUserInput = function(key) {
+
+const handleUserInput = ((key) => {
   if (key === '\u0003') {
     process.exit();
   }
@@ -32,9 +31,8 @@ const handleUserInput = function(key) {
   }
   else if (key === 'e') {
     connection.write("go ahead");
-  }
-};
+    }
+});
 
-setupInput()
 
 module.exports = { setupInput };
