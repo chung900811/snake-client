@@ -18,11 +18,10 @@ client.js
 Establishes connection to the server- assumes localhost. Prints Connected to server... 
 
 Key	Command
-W 	sends move up command
-A 	sends move left command
-S   sends move down command
-D  	sends move right command
-V   sends canned message 'NICE'
-T   sends canned message 'hello'
+w 	sends move up command
+a 	sends move left command
+s   sends move down command
+d  	sends move right command
+q   sends canned message 'Hello!'
 
-Sets the name for snake; in this case TERRY is the desired name name.
+Sets the name for snake; in this case 'TH' is the desired name.
