@@ -17,11 +17,11 @@ Handles all the logic related to setting up input stream and handling user input
 client.js
 Establishes connection to the server- assumes localhost. Prints Connected to server... 
 
-Key	Command
-w 	sends move up command
-a 	sends move left command
-s   sends move down command
-d  	sends move right command
-q   sends canned message 'Hello!'
+Key	Command:
+w 	sends move up command,
+a 	sends move left command,
+s   sends move down command,
+d  	sends move right command,
+q   sends canned message 'Hello!'.
 
 Sets the name for snake; in this case 'TH' is the desired name.
